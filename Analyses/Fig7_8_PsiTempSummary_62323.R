@@ -1,3 +1,4 @@
+# To reduce file size, we have included only the data used to generate the plots, from the hottest time of day (3pm), in a csv file in the Data folder ("Data_Wp_Temp_HottestTimeDay.csv"). The data for the other times will be made available upon request to the authors. You can load the data provided and skip directly to line 175 to reproduce the plots.   
 
 setwd("/Users/meganbartlett/Desktop/HydroshootData/climate")
 
@@ -9,7 +10,6 @@ read.csv("Oak_RCP85_2079_99_ClimateCompiled_entireseason.csv", sep = ";") -> oak
 
 read.csv("Fresno_historical_climate_input_entireseason.csv", sep = ";") -> freH
 read.csv("Oak_historical_climate_input_entireseason.csv", sep = ";") -> oakH
-
 
 
 
@@ -175,7 +175,7 @@ aggregate(TL_mean ~ Label, data = results_table_old, FUN = count_me_t40) -> kk
 
 ###########################################################################################
 ###########################################################################################
-### WATER POTENTIAL
+### PLOT - WATER POTENTIAL
 ###########################################################################################
 ###########################################################################################
 
